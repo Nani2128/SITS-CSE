@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SITS CSE(se) - Login</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+    body {
+      background-color: #000;
+      color: #0ff;
+      font-family: 'Orbitron', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #111;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 0 25px #0ff;
+      text-align: center;
+      width: 300px;
+    }
+    input {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #0ff;
+      border: 2px solid #0ff;
+      border-radius: 6px;
+    }
+    button {
+      background: #0ff;
+      color: #000;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .google-btn {
+      background: #fff;
+      color: #000;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <form class="container" action="/login" method="POST">
+    <h2>SITS CSE(se) Login</h2>
+    <input type="email" name="email" placeholder="College Email" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <button type="submit">Login</button>
+    <button class="google-btn" type="button" onclick="window.location.href='/login/google'">Login with Google</button>
+  </form>
+</body>
+</html>
